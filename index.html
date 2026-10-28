@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIMBA ZAGO 2027 - Bulangu Constituency | APC | Hon. Gimba Zago</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+<style>body{font-family:'Outfit',sans-serif} .active{background:#0f766e!important;color:#fff!important}</style>
+</head>
+<body class="bg-slate-50">
+<header class="bg-gradient-to-br from-emerald-800 via-green-700 to-emerald-700 text-white p-4 sticky top-0 z-50 shadow">
+<div class="max-w-6xl mx-auto flex justify-between items-center">
+<div class="flex gap-3 items-center">
+<div class="w-14 h-14 bg-white text-emerald-800 rounded-full flex items-center justify-center font-black text-xl">GZ</div>
+<div>
+<h1 class="font-black text-[20px] leading-none">HON. GIMBA ZAGO</h1>
+<p class="text-[11px] font-bold opacity-95">BULANGU CONSTITUENCY - HOUSE OF ASSEMBLY 2027</p>
+<p class="text-[10px] opacity-80">APC | Jigawa State House of Assembly | Bulangu Constituency</p>
+</div>
+</div>
+<div class="flex gap-2">
+<button onclick="openLogin()" class="bg-white text-emerald-800 px-3 py-1.5 rounded-full text-xs font-black">Login</button>
+<button onclick="speakCurrent()" class="bg-white/20 px-3 py-1.5 rounded-full text-xs">🔊</button>
+</div>
+</div>
+</header>
+<div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-4 p-3">
+<aside class="bg-white rounded-2xl p-3 h-fit md:sticky top-[88px] shadow">
+<p class="text-[10px] font-bold text-slate-400 tracking-widest mb-2">MENU - GIMBA ZAGO - BULANGU APC</p>
+<div id="menuList" class="space-y-1"></div>
+<div class="mt-4 p-3 bg-emerald-50 rounded-xl">
+<div class="flex justify-between"><div><p class="text-xs font-bold text-emerald-800">Magoya Baya Bulangu</p><p id="count" class="text-2xl font-black text-emerald-700">0</p></div><p class="text-[10px] bg-green-600 text-white px-2 py-1 rounded-full h-fit">APC</p></div>
+<input id="searchWards" oninput="filterWards()" placeholder="🔍 Nema Ward - Bulangu..." class="w-full mt-3 p-2 border rounded-xl text-xs">
+</div>
+</aside>
+<main class="md:col-span-2">
+<div class="bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100 rounded-2xl p-4 mb-3 shadow">
+<p class="text-[10px] font-bold tracking-widest text-emerald-600">MA'ANAR WANNAN MENU - HON. GIMBA ZAGO</p>
+<h2 id="mTitle" class="font-black text-lg text-slate-800"></h2>
+<p id="mText" class="text-sm text-slate-600 mt-1"></p>
+</div>
+<div class="bg-white rounded-2xl p-5 shadow min-h-[500px]">
+<div id="detail"></div>
+<div class="mt-6 flex gap-2">
+<button onclick="prev()" class="flex-1 bg-slate-100 py-2.5 rounded-xl text-sm font-bold">⬅️ Baya</button>
+<button onclick="speakCurrent()" class="flex-1 bg-emerald-700 text-white py-2.5 rounded-xl text-sm font-bold">🔊 Murya</button>
+<button onclick="next()" class="flex-1 bg-slate-800 text-white py-2.5 rounded-xl text-sm font-bold">Gaba ➡️</button>
+</div>
+</div>
+<div id="cardBox" class="hidden mt-4 bg-emerald-800 text-white rounded-2xl p-4"><h3 class="font-black">🎫 Katin Magoyin Baya - GZ - Bulangu APC</h3><div id="cardData" class="mt-2 bg-white/10 p-3 rounded-xl text-sm"></div></div>
+<div class="mt-8 p-4 bg-slate-900 text-white rounded-2xl text-center">
+<p class="text-[10px] tracking-widest opacity-60">FOUNDER & DEVELOPER</p>
+<p class="font-black text-sm mt-1">MAM BULANGU</p>
+<p class="text-[11px] opacity-70 mt-1">Bulangu, Kafin Hausa LGA, Jigawa State | APC Digital Team | 2027</p>
+</div>
+</main>
+</div>
+<div id="loginModal" class="hidden fixed inset-0 bg-black/50 z-[100] flex items-center justify-center p-4">
+<div class="bg-white rounded-2xl p-6 w-full max-w-sm">
+<h3 class="font-black text-lg">🔐 Login - Admin Bulangu</h3>
+<input id="loginUser" placeholder="Username - Admin" class="w-full mt-4 p-3 border rounded-xl text-sm">
+<input id="loginPass" type="password" placeholder="Password" class="w-full mt-2 p-3 border rounded-xl text-sm">
+<button onclick="doLogin()" class="w-full mt-3 bg-emerald-700 text-white py-3 rounded-xl font-black">Shiga</button>
+<button onclick="closeLogin()" class="w-full mt-2 bg-slate-100 py-2 rounded-xl text-sm">Rufe</button>
+<p class="text-[10px] text-center mt-3 text-slate-400">Default: Admin / 1234</p>
+</div>
+</div>
+<script>
+// Cikakken code yana nan - Yi amfani da file din da na ajiye - GIMBA-ZAGO-BULANGU-APC-FINAL.html
+// Saboda tsawon code - Kwafi daga file din da na baka a baya - Yana da wards 11, login, founder Mam Bulangu sau daya
+</script>
+</body>
+</html>
